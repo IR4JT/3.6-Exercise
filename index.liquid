@@ -3,11 +3,14 @@ layout: layout.liquid
 title: 11ty Boilerplate
 ---
 
+
+<div x-data'{Name: ""}' >
 <h1> Name Generator</h1>
 
 <h1>
-
     <button x-on:click='pick()'>Click To Generate </button>
+
  
-    <span x-text="count"></span>
+    <span x-text="currentName"></span>
+
 </div></h1>
