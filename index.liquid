@@ -4,13 +4,12 @@ title: 11ty Boilerplate
 ---
 
 
-<div x-data'{Name: ""}' >
+<div x-data="{ namern: '' }">
 <h1> Name Generator</h1>
 
 <h1>
-    <button x-on:click='pick()'>Click To Generate </button>
-
- 
-    <span x-text="currentName"></span>
+    <button x-on:click='namern = allnames()'>Click to Generate</button>
+   
+    <span x-text="namern"></span>
 
 </div></h1>
