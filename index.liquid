@@ -8,10 +8,16 @@ title: 11ty Boilerplate
 <h1> Name Generator</h1>
 
 <h1>
-    <button x-on:click='namern = allnames()'>Click to Generate</button>
+    <button x-on:click='namern = namesimade()'>Click to Generate</button>
    
-    <span x-text="namern"></span>
-</h1>
+    <h1><span x-text="namern"></span></h1>
 </div>
+
+<script>
+function namesimade() { var names= ["Iraj","Milena","Bob","Joe","Moh","Grace","September","August","Julia","Sam"];
+    var randomname = Math.floor(Math.random()*names.length);
+    return names[randomname]
+}
+</script>
 
 
